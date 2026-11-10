@@ -1,0 +1,25 @@
+{
+  "imagem": "rostos_atlas.png",
+  "largura": 1200,
+  "altura": 240,
+  "quadro": 48,
+  "fps": 10,
+  "tipos": [
+    "classico",
+    "animado",
+    "focado",
+    "sardento",
+    "tranquilo"
+  ],
+  "animacoes": [
+    "piscada_um_olho",
+    "piscada_dois_olhos",
+    "forca",
+    "dor",
+    "felicidade"
+  ],
+  "quadros_por_animacao": 5,
+  "como_achar_um_quadro": "x = tipo*240 + quadro*48, y = animacao*48 (pixels, origem no canto superior esquerdo; tudo comeca em 0)",
+  "web_offset": "no glb o UV aponta para o quadro (0,0,0); offset.x = (tipo*5 + quadro)/25, offset.y = animacao/5 (three.js: material.map.offset)",
+  "sequencia": "quadros 0,1,2,3,4 a 10 por segundo; 0 e 4 = rosto padrao, 2 = expressao completa"
+}
